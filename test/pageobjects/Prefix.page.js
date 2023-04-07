@@ -12,7 +12,12 @@ class PrefixPage extends Page {
         return $('#firstHeading');
     }
 
-    
+    get btntalk() {
+        return $('#ca-talk');
+    }
+    async logout() {
+        await this.btntalk.click();
+    }
 
     
 
